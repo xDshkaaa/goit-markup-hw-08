@@ -1,0 +1,86 @@
+.portfolio__list {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.portfolio__item--position {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.portfolio__tack {
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border: none;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  background-color: #f5f4fa;
+  -webkit-columns: #212121;
+  -moz-columns: #212121;
+  columns: #212121;
+
+  &:hover,
+  &:focus {
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: var(--blue-color);
+    color: #ffffff;
+  }
+}
+
+.knob-all {
+  width: 73px;
+  height: 38px;
+  left: 495px;
+  top: 174px;
+}
+
+.knob-sites {
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
+}
+
+.knob-apps {
+  width: 145px;
+  height: 38px;
+  left: 712px;
+  top: 174px;
+}
+
+.knob-design {
+  width: 103px;
+  height: 38px;
+  left: 865px;
+  top: 174px;
+}
+
+.knob-marketing {
+  width: 130px;
+  height: 38px;
+  left: 976px;
+  top: 174px;
+}

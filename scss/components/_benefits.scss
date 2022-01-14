@@ -1,0 +1,75 @@
+.benefits {
+  padding-top: 95px;
+  padding-bottom: 95px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.benefits__list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.benefits__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item--position {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.benefits__item::before {
+  content: "";
+
+  display: block;
+
+  height: 120px;
+
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+.benefits__item--position::before {
+  margin-bottom: 30px;
+}
+
+@each $list in antenna, clock, diagram, astronaut {
+  .#{$list}::before {
+    background-image: url(../images/svg/#{$list}.svg);
+  }
+}
+
+.benefints__header {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-color);
+}
+.benefints__header--position {
+  margin-bottom: 10px;
+}
+
+.benefits__text {
+  min-width: 270px;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+}
