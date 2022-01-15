@@ -19,12 +19,19 @@
   }
 }
 
+.lowland-list__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 75px;
+  }
+}
+
 .logo-studio {
   color: #ffffff;
 }
 
 .down-logo {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+
   @media screen and (max-width: 768px) {
     font-size: 24px;
     line-height: 28px;
@@ -36,6 +43,10 @@
 .location {
   @media screen and (max-width: 768px) {
     margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 0;
   }
 }
 
@@ -79,8 +90,12 @@
 .footer--position {
   margin-left: 70px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-left: 0px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;
   }
 }
 
@@ -109,7 +124,7 @@
   display: flex;
   align-items: baseline;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-left: 120px;
   }
 }
@@ -146,7 +161,12 @@
 .subscribe--position {
   margin-left: 90px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 60px;
     margin-left: 0;
   }
@@ -164,6 +184,10 @@
   @media screen and (max-width: 768px) {
     text-align: center;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .subscribe__input {
@@ -177,8 +201,12 @@
   height: 50px;
   padding: 15px 16px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 150px;
   }
 }
 
@@ -206,7 +234,7 @@
 
   @extend %button;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
