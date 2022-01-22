@@ -1,6 +1,6 @@
 .hero {
   max-width: 1600px;
-  // background-size: cover;
+  background-size: cover;
 
   margin-right: auto;
   margin-left: auto;
@@ -74,7 +74,7 @@
   }
 }
 .hero__header {
-  width: 360px;
+  max-width: 360px;
 
   margin-right: auto;
   margin-left: auto;

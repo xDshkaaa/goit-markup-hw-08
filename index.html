@@ -31,7 +31,26 @@
             Web<span class="logo">Studio</span>
           </a>
 
-          <ul class="navigation">
+          <button class="auto-btn is-open" data-menu-button>
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="auto-btn__menu"
+                href="./images/svg/sprite.svg#icon-menu"
+              ></use>
+              <use
+                class="auto-btn__close"
+                href="./images/svg/sprite.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-conteiner" id="menu-conteiner">
+             
+             <ul class="navigation">
             <li class="navigation__item navigation__item--position">
               <a href="" class="navigation__link navigation__link--active"
                 >Студия
@@ -44,8 +63,9 @@
               <a href="" class="navigation__link">Контакты</a>
             </li>
           </ul>
-        </nav>
-        <ul class="contacts">
+         </nav>
+
+         <ul class="contacts">
           <li class="contacts__item contacts__item--position">
             <a href="mailto:info@devstudio.com" class="contacts__link">
               <svg class="contacts__icon contacts__icon--position">
@@ -62,7 +82,10 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>
+         </ul>
+            
+          </div>
+          
       </div>
     </header>
 
@@ -133,11 +156,19 @@
           <h2 class="work__title work__title--position">Чем мы занимаемся</h2>
           <ul class="projects">
             <li class="projects__item projects__item--position">
-              <img
-                src="./images/our-work/box1.jpg"
-                alt="Написание верстки"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-work/box1.jpg     1x,
+                    ./images/our-work/1-img@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/our-work/box1.jpg"
+                  alt="Написание верстки"
+                  width="370"
+                />
+              </picture>
               <div class="projects__wrap">
                 <p class="projects__text projects__text--position">
                   Десктопные приложения
@@ -146,12 +177,20 @@
             </li>
 
             <li class="projects__item projects__item--position">
-              <img
-                src="./images/our-work/box2.jpg"
-                alt="Подстройка сайта под телефон
-              "
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-work/box2.jpg     1x,
+                    ./images/our-work/2-img@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/our-work/box2.jpg"
+                  alt="Подстройка сайта под телефон
+                "
+                  width="370"
+                />
+              </picture>
               <div class="projects__wrap">
                 <p class="projects__text projects__text--position">
                   Мобильные приложения
@@ -160,6 +199,14 @@
             </li>
 
             <li class="projects__item projects__item--position">
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-work/box3.jpg     1x,
+                    ./images/our-work/3-img@2x.jpg 2x
+                  "
+                />
+              </picture>
               <img
                 src="./images/our-work/box3.jpg"
                 alt="Проектирование дизайна
@@ -186,12 +233,35 @@
             <!-- Игорь Демьяненко -->
 
             <li class="members__item members__item--position">
-              <img
-                class="members_img"
-                src="./images/our-team/img1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/our-team/img1.jpg            1x,
+                    ./images/our-team/ighor-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/our-team/img1.jpg            1x,
+                    ./images/our-team/ighor-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/our-team/img1.jpg             1x,
+                    ./images/our-team/ighor-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="members_img"
+                  src="./images/our-team/img1.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                />
+              </picture>
 
               <div class="team__meta team__meta--position">
                 <h3 class="members__person members__person--position">
@@ -257,12 +327,36 @@
             <!-- Ольга Репина -->
 
             <li class="members__item members__item--position">
-              <img
-                class="members_img"
-                src="./images/our-team/img2.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <piture>
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/our-team/img2.jpg           1x,
+                    ./images/our-team/olha-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/our-team/img2.jpg           1x,
+                    ./images/our-team/olha-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/our-team/img2.jpg            1x,
+                    ./images/our-team/olha-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="members_img"
+                  src="./images/our-team/img2.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                />
+              </piture>
+
               <div class="team__meta team__meta--position">
                 <h3 class="members__person members__person--position">
                   Ольга Репина
@@ -327,12 +421,35 @@
             <!-- Николай Тарасов -->
 
             <li class="members__item members__item--position">
-              <img
-                class="members_img"
-                src="./images/our-team/img3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/our-team/img3.jpg          1x,
+                    ./images/our-team/nik-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/our-team/img3.jpg          1x,
+                    ./images/our-team/nik-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/our-team/img3.jpg           1x,
+                    ./images/our-team/nik-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="members_img"
+                  src="./images/our-team/img3.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                />
+              </picture>
               <div class="team__meta team__meta--position">
                 <h3 class="members__person members__person--position">
                   Николай Тарасов
@@ -397,12 +514,35 @@
             <!-- Михаил Ермаков -->
 
             <li class="members__item members__item--position">
-              <img
-                class="members_img"
-                src="./images/our-team/img4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/our-team/img4.jpg           1x,
+                    ./images/our-team/miha-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/our-team/img4.jpg           1x,
+                    ./images/our-team/miha-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/our-team/img4.jpg            1x,
+                    ./images/our-team/miha-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="members_img"
+                  src="./images/our-team/img4.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                />
+              </picture>
               <div class="team__meta team__meta--position">
                 <h3 class="members__person members__person--position">
                   Михаил Ермаков
@@ -708,6 +848,7 @@
         </button>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

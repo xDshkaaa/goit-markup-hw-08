@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   border-bottom: 1px solid hsl(0, 0%, 93%);
 
   background-color: #ffffff;
@@ -169,3 +170,39 @@
     display: none;
   }
 }
+
+// auto menu
+.auto-btn {
+  border: none;
+  margin-left: 140px;
+  background-color: transparent;
+}
+
+.auto-btn__menu {
+  display: none;
+}
+
+.auto-btn.is-open .auto-btn__menu {
+  display: block;
+}
+
+.auto-btn.is-open .auto-btn__close {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .auto-btn {
+    display: none;
+  }
+}
+
+// .menu-conteiner {
+//   @media screen and (max-width: 767px) {
+//     padding: 40px;
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     width: 100%;
+//     background-color: tomato;
+//   }
+// }
